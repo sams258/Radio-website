@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* assets/styles/home.css */
+.station-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.station-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  width: 600px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.station-card img {
+  max-width: 150px;
+  border-radius: 20%;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.listen-now {
+  color: rgb(3, 5, 98);
+  font-weight: bold;
+}
