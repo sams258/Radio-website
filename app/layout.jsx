@@ -14,11 +14,6 @@ const MainLayout = ({ children }) => {
       <body>
         <Navbar />
         <main>{children}</main>
-        <script
-          language="javascript"
-          type="text/javascript"
-          src="https://andromeda.shoutca.st/system/streaminfo.js"
-        ></script>
       </body>
     </html>
   );

@@ -1,0 +1,67 @@
+/* Container for the station details */
+.station-details {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px auto;
+  border-radius: 20px;
+  max-width: 450px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: rgb(197, 197, 197) 4px 4px 5px;
+}
+
+/* Logo image styling */
+.station-details img {
+  max-width: 150px;
+  border-radius: 20%;
+  display: block;
+  margin: 0 auto 16px; /* Center the image and add space below it */
+}
+
+/* Station Name */
+.station-details h1 {
+  font-size: 1.5rem;
+  color: #2d4f7c;
+  margin-bottom: 8px;
+}
+
+/* Station Description */
+.station-details p {
+  font-size: 1rem;
+  color: #376666;
+  margin-bottom: 16px;
+}
+
+/* Now Playing section */
+.now-playing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.now-playing h2 {
+  margin-right: 6px;
+  color: #376666;
+}
+
+.now-playing span {
+  color: #2d4f7c;
+}
+
+/* Listen Now link */
+.listen-now {
+  color: rgb(3, 5, 98);
+  font-weight: bold;
+}
+
+.listen-now a:hover {
+  color: #68c0c0;
+  text-decoration: underline;
+}
+
+/* Audio player styling */
+.station-details audio {
+  margin-top: 16px;
+  width: 100%;
+  border-radius: 10px;
+}
