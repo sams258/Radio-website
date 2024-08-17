@@ -1,0 +1,79 @@
+/* AboutPage.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+div.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgb(197, 197, 197) 4px 4px 5px;
+  border-radius: 20px;
+}
+
+h1.about {
+  font-size: x-large;
+  margin-bottom: 35px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+p a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  color: #e74c3c;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1.about {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}

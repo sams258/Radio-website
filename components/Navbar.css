@@ -26,6 +26,7 @@ nav {
   
   nav ul li a:hover {
     color: #68C0C0; 
+  }
   
   nav ul li a::after {
     content: '';
@@ -40,4 +41,5 @@ nav {
   
   nav ul li a:hover::after {
     width: 100%; 
+  }
   
