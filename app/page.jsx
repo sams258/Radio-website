@@ -3,7 +3,7 @@
 
 import React, { useEffect } from "react";
 import { radioStations } from "@/components/radioStations";
-import NowPlaying from "@/components/nowPlaying";
+import NowPlaying from "@/components/NowPlaying";
 import Link from "next/link";
 import "@/assets/styles/home.css";
 
