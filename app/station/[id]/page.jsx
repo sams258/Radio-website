@@ -4,7 +4,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "next/navigation"; // New API for routing/navigation
 import { radioStations } from "@/components/radioStations";
-import NowPlaying from "@/components/nowPlaying";
+import NowPlaying from "@/components/NowPlaying";
 import "@/assets/styles/station.css"; // Import the station.css file
 
 const StationDetail = () => {
