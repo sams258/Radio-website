@@ -1,45 +1,43 @@
-/* Navbar.css */
 nav {
-    background-color: #003366; 
-    padding: 16px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #ffffff; 
-    text-decoration: none;
-    font-weight: bold;
-    position: relative; 
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #68C0C0; 
-  }
-  
-  nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    background: #68C0C0; 
-    transition: width 0.3s ease; 
-  }
-  
-  nav ul li a:hover::after {
-    width: 100%; 
-  }
-  
+  background-color: #003366;
+  padding: 1em; /* Equivalent to 16px */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 0.9375em; /* Equivalent to 15px */
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #68C0C0;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0.125em; /* Equivalent to 2px */
+  display: block;
+  margin-top: 0.3125em; /* Equivalent to 5px */
+  background: #68C0C0;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}

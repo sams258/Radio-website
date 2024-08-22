@@ -12,7 +12,7 @@ export const metadata = {
     url: "https://lbiradio.com/",
     images: [
       {
-        url: "https://lbiradio.com/og-image.png",
+        url: "https://lbiradio.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "LBI GROUP Image",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "LBI GROUP HEADQUARTERS",
     description: "This is the official website of LBI GROUP online radios",
-    image: "https://lbiradio.com/og-image.png",
+    image: "https://lbiradio.com/og-image.jpg",
   },
 };
 

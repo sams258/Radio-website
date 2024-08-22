@@ -1,10 +1,8 @@
-/* assets/styles/home.css */
-
 h1 {
   display: block;
   text-align: center;
   color: #003366;
-  font-size: larger;
+  font-size: 1.5em; /* Larger size, translated to em */
   font-weight: bolder;
   margin-top: 0.5em;
   margin-bottom: 0.3em;
@@ -14,7 +12,7 @@ h2 {
   display: block;
   text-align: center;
   color: #003366;
-  font-size: medium;
+  font-size: 1.25em; /* Medium size, translated to em */
   font-weight: bolder;
   margin-top: 1em;
   margin-bottom: 0em;
@@ -27,18 +25,18 @@ h2 {
 }
 
 .station-card {
-  border: 1px solid #ccc;
-  padding: 4px;
-  margin: 6px;
-  border-radius: 20px;
-  width: 450px;
+  border: 0.0625em solid #ccc; /* Equivalent to 1px */
+  padding: 0.25em; /* Equivalent to 4px */
+  margin: 0.375em; /* Equivalent to 6px */
+  border-radius: 1.25em; /* Equivalent to 20px */
+  width: 28.125em; /* Equivalent to 450px */
   text-align: center;
   background-color: #fff;
-  box-shadow: rgb(197, 197, 197) 4px 4px 5px;
+  box-shadow: 0.25em 0.25em 0.3125em rgba(197, 197, 197, 1); /* Equivalent to 4px, 5px */
 }
 
 .station-card img {
-  max-width: 150px;
+  max-width: 9.375em; /* Equivalent to 150px */
   border-radius: 20%;
   display: block;
   margin: 0 auto;
@@ -46,12 +44,12 @@ h2 {
 
 .now-playing h3,
 .now-playing span {
-  display: inline-block; /* Display inline */
-  vertical-align: middle; /* Vertically align the text */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .now-playing h3 {
-  margin-right: 6px; /* Space between the elements */
+  margin-right: 0.375em; /* Equivalent to 6px */
   color: #376666;
 }
 
@@ -77,9 +75,9 @@ h2 {
   content: "";
   position: relative;
   width: 0%;
-  height: 1px;
+  height: 0.0625em; /* Equivalent to 1px */
   display: block;
-  margin-top: 5px;
+  margin-top: 0.3125em; /* Equivalent to 5px */
   background: #003366;
   transition: width 0.9s ease;
 }

@@ -1,37 +1,38 @@
 .introduction {
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  max-width: 900px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.introduction h2 {
-  font-size: 2em;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-.introduction p {
-  font-size: 1.2em;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  .introduction {
-    max-width: 450px;
-    padding: 15px;
+    text-align: center;
+    margin: 1.25em auto; /* Equivalent to 20px assuming base font-size is 16px */
+    padding: 0.625em; /* Equivalent to 10px */
+    background-color: #f7f7f7;
+    border-radius: 0.5em; /* Equivalent to 8px */
+    max-width: 56.25em; /* Equivalent to 900px */
+    box-shadow: 0px 0.25em 0.375em rgba(0, 0, 0, 0.1); /* Equivalent to 4px and 6px */
   }
-
+  
   .introduction h2 {
-    font-size: 1.5em;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 0.625em; /* Equivalent to 10px */
   }
-
+  
   .introduction p {
-    font-size: 1em;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.625em; /* Equivalent to 10px */
+    line-height: 1.5;
   }
-}
+  
+  @media (max-width: 768px) {
+    .introduction {
+      max-width: 28.125em; /* Equivalent to 450px */
+      padding: 0.9375em; /* Equivalent to 15px */
+    }
+  
+    .introduction h2 {
+      font-size: 1.5em;
+    }
+  
+    .introduction p {
+      font-size: 1em;
+    }
+  }
+  
