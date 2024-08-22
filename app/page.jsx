@@ -6,13 +6,14 @@ import { radioStations } from "@/components/radioStations";
 import NowPlaying from "@/components/NowPlaying";
 import Link from "next/link";
 import "@/assets/styles/home.css";
+import Introduction from '@/components/Introduction';
 
 const HomePage = () => {
   
 
   return (
     <div>
-      <h1>Welcome to LBI Group official website</h1>
+      <Introduction />
 
       <div className="station-cards">
         {radioStations.map((station) => (
