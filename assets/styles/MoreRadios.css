@@ -1,0 +1,27 @@
+/* assets/styles/MoreRadios.css */
+
+.more-radios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px; /* Total width of the container */
+  margin: 20px auto; /* Center the container horizontally */
+}
+
+.radio-link {
+  flex: 1;
+  display: block;
+  margin: 0 5px; /* Space between the logos */
+  text-align: center;
+}
+
+.radio-logo {
+  max-width: 100%;
+  max-height: 100px; /* Ensure logos are properly scaled */
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.radio-link:hover .radio-logo {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
