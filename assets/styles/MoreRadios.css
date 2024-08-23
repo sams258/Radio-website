@@ -9,7 +9,7 @@
 .radio-link {
   flex: 1;
   display: block;
-  margin: 0 5px; /* Space between the logos */
+  margin: 0 2px; /* Space between the logos */
   text-align: center;
 }
 

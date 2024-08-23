@@ -22,10 +22,10 @@ h1.about {
   text-align: center;
 }
 
-p {
+.container p {
   font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 1.25em; /* Equivalent to 20px */
+  margin-bottom: 0.625em; /* Equivalent to px */
   padding-bottom: 0.9375em; /* Equivalent to 15px */
 }
 
