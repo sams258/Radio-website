@@ -17,3 +17,14 @@
   font-weight: normal;
   color: #2c3e50;
 }
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
