@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lbiradio.com
+
+# Sitemaps
+Sitemap: https://lbiradio.com/sitemap.xml
+Sitemap: https://lbiradio.com/my-custom-sitemap-1.xml
+Sitemap: https://lbiradio.com/my-custom-sitemap-2.xml
