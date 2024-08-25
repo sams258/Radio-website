@@ -10,18 +10,47 @@ import "@/assets/styles/station.css"; // Import the station.css file
 const StationDetail = () => {
   const { id } = useParams(); // Get the station ID from the URL
 
-  const station = radioStations.find((station) => station.id === parseInt(id));
+  const station = radioStations.find(
+    (station) => station.id === parseInt(id, 10)
+  );
 
   useEffect(() => {
     if (station) {
+      // Remove any existing Centova Cast scripts
+      const existingScript = document.getElementById("centova-cast-script");
+      if (existingScript) {
+        existingScript.remove();
+      }
+
+      // Create and append the new Centova Cast script
       const script = document.createElement("script");
-      script.src = `https://${station.server}.shoutca.st/system/streaminfo.js`; // Dynamic script src
-      script.language = "javascript";
-      script.type = "text/javascript";
+      script.id = "centova-cast-script"; // Assign an ID for easy reference
+      script.src = `https://${
+        station.server
+      }.shoutca.st/system/streaminfo.js?${Date.now()}`; // Append timestamp to prevent caching
+      script.async = true;
+      script.defer = true;
+
       document.body.appendChild(script);
 
+      script.onload = () => {
+        console.log(`Centova Cast script loaded for ${station.name}`);
+        // Manually trigger the Centova Cast update function if available
+        if (window.cc_streaminfo) {
+          window.cc_streaminfo();
+        }
+      };
+
+      script.onerror = () => {
+        console.error(`Failed to load Centova Cast script for ${station.name}`);
+      };
+
+      // Cleanup function to remove the script when the component unmounts or station changes
       return () => {
-        document.body.removeChild(script);
+        const scriptToRemove = document.getElementById("centova-cast-script");
+        if (scriptToRemove) {
+          scriptToRemove.remove();
+        }
       };
     }
   }, [station]);
@@ -39,8 +68,8 @@ const StationDetail = () => {
         className="station-logo"
       />
       <p className="station-description">{station.description}</p>
-      <StationPlaying station={station} />{" "}
-      {/* The new StationPlaying component */}
+      <StationPlaying station={station} />
+      {/* Use the StationPlaying component */}
       <audio controls className="station-audio">
         <source src={station.liveStreamUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
