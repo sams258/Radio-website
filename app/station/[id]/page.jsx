@@ -68,8 +68,8 @@ const StationDetail = () => {
         className="station-logo"
       />
       <p className="station-description">{station.description}</p>
-      {/*<StationPlaying station={station} />*/}
-      {/* Use the StationPlaying component */}
+      <StationPlaying station={station} />
+
       <audio controls className="station-audio">
         <source src={station.liveStreamUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
