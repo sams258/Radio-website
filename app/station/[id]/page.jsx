@@ -68,7 +68,7 @@ const StationDetail = () => {
         className="station-logo"
       />
       <p className="station-description">{station.description}</p>
-      <StationPlaying station={station} />
+      {/*<StationPlaying station={station} />*/}
       {/* Use the StationPlaying component */}
       <audio controls className="station-audio">
         <source src={station.liveStreamUrl} type="audio/mpeg" />
