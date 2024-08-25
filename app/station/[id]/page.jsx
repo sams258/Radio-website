@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "next/navigation"; // New API for routing/navigation
 import { radioStations } from "@/components/radioStations";
-import NowPlaying from "@/components/NowPlaying";
+import StationPlaying from "@/components/StationPlaying";
 import MoreRadios from "@/components/MoreRadios"; // Import the MoreRadios component
 import "@/assets/styles/station.css"; // Import the station.css file
 
@@ -39,12 +39,12 @@ const StationDetail = () => {
         className="station-logo"
       />
       <p className="station-description">{station.description}</p>
-      <NowPlaying station={station} />
+      <StationPlaying station={station} />{" "}
+      {/* The new StationPlaying component */}
       <audio controls className="station-audio">
         <source src={station.liveStreamUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-
       {/* Include the MoreRadios component and pass the current station's ID */}
       <MoreRadios mainStationId={station.id} radioStations={radioStations} />
     </div>

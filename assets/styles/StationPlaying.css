@@ -1,0 +1,19 @@
+/* assets/styles/StationPlaying.css */
+
+.station-playing {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #2c3e50;
+}
+
+.station-song {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.station-song::before {
+  content: "Now: ";
+  font-weight: normal;
+  color: #2c3e50;
+}
