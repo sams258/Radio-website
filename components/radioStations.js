@@ -32,7 +32,7 @@ export const radioStations = [
     name: "LBI Hits",
     logo: "/images/lbi-hits.png",
     liveStreamUrl: "https://lbihits-lbnet2.radioca.st/stream?type=http&amp;nocache=91",
-    description: "This LBI Hits, playing hits from today and yesterday.",
+    description: "This is LBI Hits, playing hits from today and yesterday.",
     username: "lbihits",
     server: "dione",
   },
