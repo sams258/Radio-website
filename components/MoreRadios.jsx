@@ -15,15 +15,14 @@ const MoreRadios = ({ mainStationId, radioStations }) => {
   }, [mainStationId, radioStations]);
 
   return (
-    <div className="more-radios">
-      {filteredStations.map(station => (
-        <Link key={station.id} href={`/station/${station.id}`}>
-          <a className="radio-link">
-            <img src={station.logo} alt={station.name} className="radio-logo" />
-          </a>
-        </Link>
-      ))}
-    </div>
+<div className="more-radios">
+  {filteredStations.map(station => (
+    <Link key={station.id} href={`/station/${station.id}`} className="radio-link">
+      <img src={station.logo} alt={station.name} className="radio-logo" />
+    </Link>
+  ))}
+</div>
+
   );
 };
 
