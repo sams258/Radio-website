@@ -6,11 +6,9 @@ import { radioStations } from "@/components/radioStations";
 import NowPlaying from "@/components/NowPlaying";
 import Link from "next/link";
 import "@/assets/styles/home.css";
-import Introduction from '@/components/Introduction';
+import Introduction from "@/components/Introduction";
 
 const HomePage = () => {
-  
-
   return (
     <div>
       <Introduction />
@@ -19,7 +17,9 @@ const HomePage = () => {
         {radioStations.map((station) => (
           <div key={station.id} className="station-card">
             <h2>{station.name}</h2>
-            <img src={station.logo} alt={`${station.name} logo`} />
+            <Link href={`/station/${station.id}`}>
+              <img src={station.logo} alt={`${station.name} logo`} />
+            </Link>
 
             <NowPlaying station={station} />
             <div className="listen-now">
