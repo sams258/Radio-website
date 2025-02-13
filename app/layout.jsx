@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import "@/assets/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "LBI GROUP HEADQUARTERS",
@@ -71,6 +72,7 @@ const MainLayout = ({ children }) => {
         <Navbar />
         <main>{children}</main>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
