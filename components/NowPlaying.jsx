@@ -16,7 +16,7 @@ const NowPlaying = ({ station }) => {
         if (data.items && data.items.length > 0) {
           setNowPlaying(data.items[0].title); // Set the track title
         } else {
-          setNowPlaying("No data available");
+          setNowPlaying("Playing Live Stream");
         }
       } catch (error) {
         console.error("Error fetching now playing data:", error);
