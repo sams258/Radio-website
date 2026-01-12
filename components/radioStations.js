@@ -4,7 +4,7 @@ export const radioStations = [
     id: 1,
     name: "LBI Radio - Lebanon",
     logo: "/images/lbi-radio-logo-1.png",
-    liveStreamUrl: "https://lbigroup.radioca.st/stream?type=http&amp;nocache=91",
+    liveStreamUrl: "https://live.lbiradio.com/listen/station_1/1?type=http&amp;nocache=91",
     description: "This is LBI Radio - Lebanon, playing Arabic hits.",
     username: "lbigroup",
     server: "andromeda",
