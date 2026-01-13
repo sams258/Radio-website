@@ -67,6 +67,8 @@ const MainLayout = ({ children }) => {
           content={metadata.twitter.description}
         />
         <meta name="twitter:image" content={metadata.twitter.image} />
+        {/* Online Radio Box VerificationTag */}
+        <meta name="orb-verification" content="6d1d74399bab9dea" />
       </head>
       <body>
         <Navbar />
